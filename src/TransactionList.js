@@ -14,6 +14,7 @@ export const TransactionList = () => {
                         key={transaction.id}
                         name={transaction.text}
                         num={transaction.amount}
+                        id={transaction.id}
                         />
                 )) : ''}
                 
