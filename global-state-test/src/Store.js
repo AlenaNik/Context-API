@@ -9,8 +9,8 @@ const alenaState = {
 
 export const Context = React.createContext();
 
-// wrapper component
-const Store = ({ children }) => {
+// wrapper component - context provider
+export const Store = ({ children }) => {
     const [state, setState] = useState(alenaState);
     return (
         <Context.Provider value={[state, setState]}>
